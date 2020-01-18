@@ -3,7 +3,7 @@
 :root {
     --primary-color: #20435E;
     --secondary-color: #99BC60;
-    --accent1-color: #4C2337;
+    --accent1-color: #E5B837;
     --accent2-color: #963518;
     --heading-font: "Libre Baskerville";
     --paragraph-font: 'Libre Baskerville', serif;
@@ -42,7 +42,7 @@ header {
 }
 
 header>h1 {
-    color:
+    color: 
 }
 
 p {
