@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 
 :root {
-    --primary-color: #396E94;
-    --secondary-color: #E7C24F;
-    --accent1-color: #A43312;
-    --accent2-color: white;
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, @Libre Baskerville, @Arimo
+    --primary-color: #20435E;
+    --secondary-color: #99BC60;
+    --accent1-color: #E5B832;
+    --accent2-color: #963518;
+    --heading-font: "Libre Baskerville";
+    --paragraph-font: 'Libre Baskerville', serif;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 body {
     max-width: 900px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #ffffff;
     padding: 1em
 }
 
