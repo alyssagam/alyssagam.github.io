@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 
 :root {
-    --primary-color: #20435E;
-    --secondary-color: #99BC60;
-    --accent1-color: #E5B837;
-    --accent2-color: #963518;
-    --heading-font: "Libre Baskerville";
-    --paragraph-font: 'Libre Baskerville', serif;
+    --primary-color: rgb(169, 213, 247);
+    --secondary-color: rgb(191, 241, 109);
+    --accent1-color: rgb(245, 232, 119);
+    --accent2-color: #a53c1d;
+    --heading-font: sans-serif;
+    --paragraph-font: serif;
 }
 
 body {
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     font-size: 16px;
 }
 
@@ -20,17 +20,19 @@ main,
 footer {
     max-width: 960px;
     margin: 0 auto 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--secondary-color);
+    color: black;
     border: 5px solid #3333;
     padding: 10px;
+    font: var(--heading-font);
 }
 
 header img {
-    width: 50px;
+    width: 75px;
     height: auto;
     border: 1px solid black;
     box-shadow: 0 0 30px #ccc;
@@ -39,4 +41,18 @@ header img {
 
 header h1 {
     font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--accent2-color);
+    text-align: center;
+}
+
+image {
+    align-self: center;
+}
+
+p {
+    font-size: 1rem;
 }
