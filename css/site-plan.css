@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 
 :root {
-    --primary-color: #20435E;
-    --secondary-color: #99BC60;
-    --accent1-color: #E5B837;
-    --accent2-color: #963518;
-    --heading-font: "Libre Baskerville";
-    --paragraph-font: 'Libre Baskerville', serif;
+    --primary-color: rgb(169, 213, 247);
+    --secondary-color: rgb(191, 241, 109);
+    --accent1-color: rgb(245, 232, 119);
+    --accent2-color: #a53c1d;
+    --font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
