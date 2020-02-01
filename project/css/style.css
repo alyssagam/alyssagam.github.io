@@ -29,6 +29,7 @@ footer {
     font: Arial;
     display: flex;
     box-shadow: 0 0 30 black;
+    margin-bottom: 15px;
 }
 
 header img {
