@@ -1,14 +1,17 @@
 :root {
-    --primary-color: rgb(169, 213, 247);
-    --secondary-color: rgb(191, 241, 109);
-    --accent1-color: rgb(245, 232, 119);
-    --accent2-color: #a53c1d;
-    --font-family: Arial, Helvetica, sans-serif;
+    --primary-color: rgb(200, 231, 255);
+    --secondary-color: rgb(204, 229, 145);
+    --accent1-color: rgb(248, 236, 130);
+    --accent2-color: #b34321;
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
     font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header,
@@ -17,7 +20,7 @@ main,
 footer {
     max-width: 960px;
     margin: 0 auto 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 header,
@@ -25,23 +28,44 @@ footer {
     background-color: var(--secondary-color);
     color: black;
     border: 5px double var(--accent2-color);
-    padding: 15px;
-    font: Arial;
+    padding: 1px;
     display: flex;
-    box-shadow: 0 0 30 black;
-    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 header img {
-    width: 75px;
-    height: 75px;
-    border: 1px solid black;
-    box-shadow: 0 0 10px #ccc;
-
+    width: 9rem;
+    height: auto;
+    background-color: white;
 }
 
-header h1 {
-    font-size: 3.5rem;
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.motto {
+    font-style: italic;
+    color: black;
+    font-size: 1.5rem;
+    letter-spacing: 1.5pt;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    padding-left: 4rem;
+}
+
+ol {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 h2 {
@@ -51,11 +75,9 @@ h2 {
     font-style: italic;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+p {
+    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
 }
 
 main img {
@@ -63,6 +85,13 @@ main img {
     box-shadow: 0 0 10px black;
 }
 
-p {
-    font-size: 1rem;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.social {
+    padding-left: 7rem;
 }
