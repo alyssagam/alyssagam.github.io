@@ -63,7 +63,7 @@ h1 {
     padding-left: 4rem;
 }
 
-ol {
+ul {
     list-style-type: squares;
     font-size: 1.3rem;
     display: flex;
