@@ -20,7 +20,7 @@ main,
 footer {
     max-width: 960px;
     margin: 0 auto 0 auto;
-    
+
 }
 
 header,
@@ -55,7 +55,6 @@ header img {
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
-    
 }
 
 h1 {
@@ -64,10 +63,18 @@ h1 {
 }
 
 ul {
-    list-style-type: squares;
-    font-size: 1.3rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
     display: flex;
     justify-content: center;
+}
+
+li {
+    width: 20%;
+    float: left;
+    margin: 2.5%;
 }
 
 h2 {
