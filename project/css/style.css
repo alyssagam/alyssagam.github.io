@@ -105,3 +105,16 @@ main img {
 .social {
     padding-left: 7rem;
 }
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+  @media screen and (max-width: 550px) {
+    .home-grid {
+      display: block;
+    }
+  }
