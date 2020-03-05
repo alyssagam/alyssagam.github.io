@@ -90,8 +90,8 @@ h2 {
 }
 
 p {
-    font-size: 1.25rem;
-    padding-bottom: 1.5rem;
+    font-size: 1.1rem;
+    padding-bottom: .5rem;
 }
 
 h3 {
@@ -99,9 +99,14 @@ h3 {
     color: var(--accent2-color);
 }
 
+h4 {
+    font-size: 1.25rem;
+}
+
 main img {
     border: 3px solid var(--accent1-color);
     box-shadow: 0 0 10px black;
+    width: 100%;
 }
 
 .social {
@@ -112,7 +117,6 @@ main img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 300px 100px 300px 100px 100px;
-    grid-gap: 10px;
 }
 
 /* call to action*/
