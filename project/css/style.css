@@ -119,36 +119,6 @@ main img {
     grid-template-rows: 100px 300px 100px 300px 100px 100px;
 }
 
-/* call to action*/
-.banner-box {
-    padding-bottom: 2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.banner-box img {
-    grid-column: 1 / -1;
-    grid-row: 1;
-}
-
-.action {
-    grid-column: 1;
-    grid-row: 1;
-    background-color: rgba(226, 245, 182, 0.74);
-    margin: 1em 3em;
-    padding: 1em;
-    text-align: center;
-}
-
-.action button {
-    line-height: 2em;
-    width: 10em;
-    background-color: #e7c24f;
-    font-size: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 2rem;
-}
-
 /* top row*/
 .home-headline-1 {
     grid-column: 1;
@@ -194,8 +164,55 @@ main img {
     padding-right: 4em;
 }
 
+/* call to action*/
+.banner-box {
+    padding-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner-box img {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgba(226, 245, 182, 0.74);
+    margin: 1em 3em;
+    padding: 1em;
+    text-align: center;
+}
+
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: #e7c24f;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 2rem;
+}
+
   @media screen and (max-width: 550px) {
     .home-grid {
       display: block;
     }
   }
+
+/*Rivers*/
+
+.image-1 {
+    width: 400px;
+    float: left;
+}
+
+.image-2 {
+    width: 400px;
+    float: right;
+}
+
+.image-3 {
+    width: 400px;
+    float: left;
+}
