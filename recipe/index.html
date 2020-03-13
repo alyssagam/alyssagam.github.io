@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Millennial Meals</title>
+    <meta name="description"
+        content="Quick and delicious meals for the busy millennials. Whether you are new parents, newly married, or in college, we have delicious meals for you and your family!">
+    <link rel="stylesheet" href="css/recipe.css">
+</head>
+<body>
+    <header> 
+        <picture>
+            <img src="/recipe/images/Logo.jpg" alt="Company Logo"
+                width="150">
+        </picture>
+        <section class="heading">
+            <h1>Millennial Meals</h1>
+            <div class="motto">The Flavors of Family</div>
+        </section>
+</header>
+
+<nav>
+    <ul>
+        <li><a style="text-decoration:none" href="/index.html">Home</a></li>
+        <li><a style="text-decoration:none" href="/main.html">Main Dishes</a></li>
+        <li><a style="text-decoration:none" href="/side.html">Side Dishes</a></li>
+        <li><a style="text-decoration:none" href="/desserts.html">Desserts</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="home-page-main">
+        <img src="/recipe/images/" alt="Cooking">
+        <h2>Welcome to Millennial Meals!</h2>
+    </div>
+    <div class="our-mission">
+            <h3>Our Mission</h3>
+            <p>Do you find it difficult to make tasty, healthy meals for you and your family every day? Whether you are a college student or a busy parent, life gets busy and leaves little time for making a homecooked dinner. We live in a fast pace world with many options of Fast Food Restaurants for our meals. Being constantly on the run is difficult to make a delicious, easy, and nutritious meal for you and your family or roommates.
+                <br> My website, Millennial Meals, was inspired by my sister who recently finished college and become a mother to twins. Trying to balance their schedule and making healthy meals was difficult until she found recipes that made delicious meals in a short time. She wanted a platform to share these meals with other busy students and parents but also options for others to share their own recipe.
+                <br> My site will have many recipes including ones my sister has loved and a page for others to post their own recipes to be added to the growing list of quick and delicious meals.
+            </p>
+    </div>
+    <div class="sharing">
+        <h3>We want your help!</h3>
+        <p>Do you have easy recipes that you love to make? Please share your favorite quick and delicious recipes with us below! Please enter your name, email, recipe, story behind the recipe and whether or not you want credit for the recipe or stay anonymous</p>
+    </div>
+
+    <div id="feedback"></div>
+    <form action="thanks.html" method="POST">
+        <label for="name">Your Name: </label>
+        <input type="text" id="name" name="name" required="required">
+        <label for="email">Email address: </label>
+        <input type="email" id="email" name="email" required="required">
+        <label for="credit">Anonymous? </label>
+        <select name="credit" id="credit" required="required>
+            <option value="" disabled selected>Choose from this list</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <select name="select" id="type" required="required>
+            <option value="" disabled selected>Choose from this list</option>
+            <option value="main">Main Dish</option>
+            <option value="side">Side Dish</option>
+            <option value="dessert">Dessert</option>
+        <label for="recipe">Recipe:</label>
+        <textarea name="comments" id="recipe"></textarea>
+        <label for="story">Story Behind the Meal:</label>
+        <textarea name="comments" id="story"></textarea>
+        <p></p>
+        <button type="submit">Submit Recipe</button>
+    </form>
+
+    
+  <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form element so we can read what was entered in it.
+    const formElement = document.forms[0];
+    
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+      // stop the form from doing the default action
+      e.preventDefault();
+      // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+      feedbackElement.innerHTML = 'Hello '+ formElement.name.value +'! Thank you for sharing your recipe! We will contact you when we upload your recipe to the website!';
+      // make the feedback element visible.
+      feedbackElement.style.display = "block";
+    });
+  </script>
+
+   <style>
+   form {
+    margin: 0 auto; 
+    width: 800px;
+    padding: 1em;
+    border: 1px solid #815c29;
+    background-color: #469e2b;;
+    font-size: 1.25em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, 
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+    background-color: rgb(214, 214, 214);
+  }
+  
+  input:focus, 
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+    padding-top: 10px;
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+    background-color: #eea051;
+    font-size: 1.5em;
+  }
+
+  #feedback { 
+  /* add styling and layout properties of your own design here as needed */
+  display: none; /* we will make the element invisible until the form is submitted successfully */
+  font-size: 1.5em;
+  background-color: #eea051;
+  padding-left: 10px;
+  text-align: center;
+ }
+
+</style>
+
+</main>
+
+<footer>Alyssa Gamble | BYU-Idaho | WDD 130 - Web Fundamentals
+    <div class="social">
+        <a href="https://www.facebook.com/"><img src="/project/images/Facebook.png" alt="Facebook Logo"></a>
+        <a href="https://twitter.com/"><img src="/project/images/Twitter.jpg" alt="Twitter Logo"></a>
+        <a href="https://www.instagram.com/"><img src="/project/images/Instagram.png" alt="Instagram Logo"></a>
+    </div>
+</footer>
+
+</body>
+</html>
