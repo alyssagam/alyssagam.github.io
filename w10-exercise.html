@@ -9,7 +9,9 @@
     <meta name="description"
 </head>
 
-<form action="/my-handling-form-page" method="post">
+<body>    
+  <div id="feedback"></div>
+  <form action="/my-handling-form-page" method="post">
     <ul>
      <li>
        <label for="name">Name:</label>
@@ -24,10 +26,31 @@
        <textarea id="msg" name="user_message"></textarea>
      </li>
     </ul>
-    <li class="button">
+    <ul>
+      <li class="button">
         <button type="submit">Send your message</button>
-    </li>
+      </li>
+    </ul>
    </form>
+    
+  </body>
+
+  <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form element so we can read what was entered in it.
+    const formElement = document.forms[0];
+    
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+      // stop the form from doing the default action
+      e.preventDefault();
+      // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+      feedbackElement.innerHTML = 'Hello '+ formElement.name.value +'! Thanks for your input!';
+      // make the feedback element visible.
+      feedbackElement.style.display = "block";
+    });
+  </script>
 
    <style>
    form {
@@ -39,8 +62,21 @@
     border: 1px solid rgb(133, 132, 132);
     border-radius: 1em;
     background-color: rgb(255, 144, 144);
+    font-size: 1.25em;
   }
   
+  body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: Acme, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
   ul {
     list-style: none;
     padding: 0;
@@ -90,6 +126,7 @@
   .button {
     /* Align buttons with the text fields */
     padding-left: 90px; /* same size as the label elements */
+    padding-top: 10px;
   }
   
   button {
@@ -97,6 +134,16 @@
        between the labels and their text fields */
     margin-left: .5em;
     background-color: rgb(102, 196, 255);
+    font-size: 1.5em;
   }
+
+  #feedback { 
+  /* add styling and layout properties of your own design here as needed */
+  display: none; /* we will make the element invisible until the form is submitted successfully */
+  font-size: 1.5em;
+  background-color: rgb(167, 248, 151);
+  padding-left: 10px;
+  text-align: center;
+ }
 
 </style>
