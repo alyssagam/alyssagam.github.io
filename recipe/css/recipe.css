@@ -34,6 +34,12 @@ footer {
     justify-content: center;
 }
 
+main img {
+    border: 5px solid var(--accent3-color);
+    box-shadow: 0 0 20px black;
+    width: 100%;
+}
+
 h1 {
     font-size: 3rem;
     padding-left: 4rem;
