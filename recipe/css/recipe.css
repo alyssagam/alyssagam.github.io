@@ -67,7 +67,7 @@ h1 {
 .nav-ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: .5rem;
     overflow: hidden;
     background-color: var(--secondary-color);
     font-size: 1.5rem;
@@ -134,16 +134,12 @@ ul {
     font-size: 1.2rem;
   }
 
+/* Home CSS- grid??????*/
+
 /* Main Dishes CSS*/
 
-  .pineapple {
-      width: 150px;
-      height: auto;
-      float: right;
-  }
-
-  .veggies {
-      width: 150px;
+  .recipe-img {
+      width: 200px;
       height: auto;
       float: right;
   }
