@@ -1,9 +1,11 @@
+
+/*Overall Website CSS*/
 :root {
-    --primary-color: #ff6262;
+    --primary-color: #ff4949;
     --secondary-color: #eea051;
     --accent1-color: #f0ed91;
-    --accent2-color: #5cb143;
-    --accent3-color: #815c29;
+    --accent2-color: #50a038;
+    --accent3-color: #6b512d;
     --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -27,11 +29,17 @@ header,
 footer {
     background-color: var(--primary-color);
     color: black;
-    border: 5px double var(--accent3-color);
+    border: 8px double var(--accent3-color);
     padding: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+header img {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--accent2-color);
 }
 
 main img {
@@ -64,6 +72,9 @@ h1 {
     background-color: var(--secondary-color);
     font-size: 1.5rem;
     font-weight: bolder;
+    border-style: outset;
+    border-color: var(--accent3-color);
+    border-bottom-style: none;
   }
   
 .nav-li {
@@ -78,7 +89,6 @@ h1 {
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
   .nav-li a:hover {
     background-color: var(--accent1-color);
   }
@@ -101,6 +111,7 @@ h2 {
 h3 {
     font-size: 2rem;
     color: var(--accent3-color);
+    border-style: solid none;
 }
 
 h4 {
@@ -122,3 +133,22 @@ ul {
     padding-left: 5rem;
     font-size: 1.2rem;
   }
+
+/* Main Dishes CSS*/
+
+  .pineapple {
+      width: 150px;
+      height: auto;
+      float: right;
+  }
+
+  .veggies {
+      width: 150px;
+      height: auto;
+      float: right;
+  }
+
+
+/* Side Dishes CSS*/
+
+/* Dessert Dishes CSS*/
