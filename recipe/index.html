@@ -1,70 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Millennial Meals</title>
-    <meta name="description"
-        content="Quick and delicious meals for the busy millennials. Whether you are new parents, newly married, or in college, we have delicious meals for you and your family!">
-    <link rel="stylesheet" href="css/recipe.css">
-</head>
-<body>
-    <header> 
-        <picture>
-            <img src="/recipe/images/Logo.jpg" alt="Company Logo"
-                width="150">
-        </picture>
-        <section class="heading">
-            <h1>Millennial Meals</h1>
-            <div class="motto">The Flavors of Family</div>
-        </section>
-</header>
 
-<nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Millennial Meals</title>
+  <meta name="description"
+    content="Quick and delicious meals for the busy millennials. Whether you are new parents, newly married, or in college, we have delicious meals for you and your family!">
+  <link rel="stylesheet" href="css/recipe.css">
+</head>
+
+<body>
+  <header>
+    <picture>
+      <img src="/recipe/images/Logo.jpg" alt="Company Logo" width="150">
+    </picture>
+    <section class="heading">
+      <h1>Millennial Meals</h1>
+      <div class="motto">The Flavors of Family</div>
+    </section>
+  </header>
+
+  <nav>
     <ul class="nav-ul">
       <li class="nav-li"><a style="text-decoration:none" href="/recipe/index.html">Home</a></li>
       <li class="nav-li"><a style="text-decoration:none" href="/recipe/main.html">Main Dishes</a></li>
       <li class="nav-li"><a style="text-decoration:none" href="/recipe/side.html">Side Dishes</a></li>
       <li class="nav-li"><a style="text-decoration:none" href="/recipe/desserts.html">Desserts</a></li>
     </ul>
-</nav>
+  </nav>
 
-<main>
+  <main>
     <div class="home-page-main">
-        <img src="/recipe/images/Table.jpeg" alt="Cooking">
-        <h2>Welcome to Millennial Meals!</h2>
+      <img src="/recipe/images/Table.jpeg" alt="Cooking">
+      <h2>Welcome to Millennial Meals!</h2>
     </div>
-    <div class="our-mission">
-            <h3>Our Mission</h3>
-            <p>Do you find it difficult to make tasty, healthy meals for you and your family every day? Whether you are a college student or a busy parent, life gets busy and leaves little time for making a homecooked dinner. We live in a fast pace world with many options of Fast Food Restaurants for our meals. Being constantly on the run is difficult to make a delicious, easy, and nutritious meal for you and your family or roommates.
-                <br> My website, Millennial Meals, was inspired by my sister who recently finished college and become a mother to twins. Trying to balance their schedule and making healthy meals was difficult until she found recipes that made delicious meals in a short time. She wanted a platform to share these meals with other busy students and parents but also options for others to share their own recipe.
-                <br> My site will have many recipes including ones my sister has loved and a page for others to post their own recipes to be added to the growing list of quick and delicious meals.
-            </p>
+    <div class="home-grid">
+      <h3 class="mission-head">Millennial <br> Meals <br> Mission</h3>
+      <p class="mission-para">Do you find it difficult to make tasty, healthy meals every day?
+        Our fast pace world can make it hard to make delicious meals for you, your family, or your roommates. My
+        website, Millenial Meals, was inspired by my sister who recently finished college and became a mother to twins.
+        Trying to balance their schedule and making healthy meals was difficult until she found recipes that made
+        delicous meals quickly. She wanted a platform to share these meals and for others to share their favorite
+        recipes.</p>
+      <h3 class="demo-head">Demographics <br> for our <br> Meals</h3>
+      <p class="demo-para">My website focuses on college students, newly weds, and new parents. Trying to balance
+        school, work, relationships, children, and chores is challenging for many especially when you need to provide
+        meals. It is so easy to grab a
+        meal at a Fast Food restaurant, but this becomes expensive and is unhealthy. Providing healthier and easy meals
+        for college students, new couples, and new parents is our goal. We hope this will help create better habits to
+        make you happier and healthier</p>
+      <h3 class="time-head">Time <br> of our <br> recipes</h3>
+      <p class="time-para">Our goal is to provide recipes that can be made and cooked in an hour or less. The majority
+        of our recipes use easy-to-find ingredients and simple cooking methods. Some of these
+        recipes do require a crockpot, so while the preparing is quick, the cooking may be a few hours. I
+        included these recipes since they're easy to prepare even if it take longer to cook.
+        If you wish to do these crockpot recipes, plan on
+        preparing the recipe in the morning, cook it all day, and eat when you are ready.</p>
     </div>
     <div class="sharing">
-        <h3>We want your help!</h3>
-        <p>Do you have easy recipes that you love to make? Please share your favorite quick and delicious recipes with us below! Please enter your information in the form below. By stating you wish to stay anonymous, we will not include your name with your recipe. If the recipe has a fun story to go along with it, we would love to share it with others.</p>
+      <h3>We want your help!</h3>
+      <p>Do you have easy recipes that you love to make? Please share your favorite quick and delicious recipes with us
+        below! Please enter your information in the form below. By stating you wish to stay anonymous, we will not
+        include your name with your recipe. If the recipe has a fun story to go along with it, we would love to share it
+        with others.</p>
     </div>
 
     <div id="feedback"></div>
     <form action="thanks.html" method="POST">
-        <label for="name">Your Name: </label>
-        <input type="text" id="name" name="name" required="required">
-        <label for="email">Email address: </label>
-        <input type="email" id="email" name="email" required="required">
-        <label for="credit">Do you want to Anonymous?</label>
-        <select name="credit" id="credit">
-            <option value="" disabled selected>Choose from this list</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-        </select>
-        <label for="type">Recipe: </label>
-        <select name="select" id="type">
-            <option value="" disabled selected>Choose from this list</option>
-            <option value="main">Main Dish</option>
-            <option value="side">Side Dish</option>
-            <option value="dessert">Dessert</option>
+      <label for="name">Your Name: </label>
+      <input type="text" id="name" name="name" required="required">
+      <label for="email">Email address: </label>
+      <input type="email" id="email" name="email" required="required">
+      <label for="credit">Do you want to Anonymous?</label>
+      <select name="credit" id="credit">
+        <option value="" disabled selected>Choose from this list</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <label for="type">Recipe: </label>
+      <select name="select" id="type">
+        <option value="" disabled selected>Choose from this list</option>
+        <option value="main">Main Dish</option>
+        <option value="side">Side Dish</option>
+        <option value="dessert">Dessert</option>
         <label for="recipe">Recipe</label>
         <textarea name="comments" id="recipe"></textarea>
         <label for="story">Story Behind the Meal</label>
@@ -73,85 +93,92 @@
         <button type="submit">Submit Recipe</button>
     </form>
 
-    
-  <script>
-    const feedbackElement = document.getElementById('feedback');
-    const formElement = document.forms[0];
-    
-    formElement.addEventListener('submit', function(e) {
-      e.preventDefault();
-      feedbackElement.innerHTML = 'Hello '+ formElement.name.value +'! Thank you for sharing your recipe! We will contact you when we upload your recipe to the website!';
-      feedbackElement.style.display = "block";
-    });
-  </script>
 
-</main>
+    <script>
+      const feedbackElement = document.getElementById('feedback');
+      const formElement = document.forms[0];
 
-<footer>Alyssa Gamble | BYU-Idaho | WDD 130 - Web Fundamentals
+      formElement.addEventListener('submit', function (e) {
+        e.preventDefault();
+        feedbackElement.innerHTML = 'Hello ' + formElement.name.value +
+          '! Thank you for sharing your recipe! We will contact you when we upload your recipe to the website!';
+        feedbackElement.style.display = "block";
+      });
+    </script>
+
+  </main>
+
+  <footer>Alyssa Gamble | BYU-Idaho | WDD 130 - Web Fundamentals
     <div class="social">
       <a href="">SitePlan</a>
-        <a href="https://www.facebook.com/"><img src="/project/images/Facebook.png" alt="Facebook Logo"></a>
-        <a href="https://twitter.com/"><img src="/project/images/Twitter.jpg" alt="Twitter Logo"></a>
-        <a href="https://www.instagram.com/"><img src="/project/images/Instagram.png" alt="Instagram Logo"></a>
+      <a href="https://www.facebook.com/"><img src="/project/images/Facebook.png" alt="Facebook Logo"></a>
+      <a href="https://twitter.com/"><img src="/project/images/Twitter.jpg" alt="Twitter Logo"></a>
+      <a href="https://www.instagram.com/"><img src="/project/images/Instagram.png" alt="Instagram Logo"></a>
     </div>
-</footer>
+  </footer>
 
-<style>
-  form {
-   margin: 0 auto; 
-   width: 600px;
-   padding: 1em;
-   border: 1px solid #815c29;
-   background-color: #5cb143;;
-   font-size: 1.4em;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- 
- input, 
- textarea, select {
-   font: 2em;
-   width: 500px;
-   height: 2em;
-   box-sizing: border-box;
-   border: 1px solid rgb(0, 0, 0);
-   background-color: rgb(255, 255, 255);
- }
- 
- input:focus, 
- textarea:focus {
-   border-color: #000;
- }
- 
- textarea {
-   vertical-align: top;
-   height: 10em;
- }
- 
-option, input, select, textarea {
- font-size: 1em;
-}
+  <style>
+    form {
+      margin: 0 auto;
+      width: 600px;
+      padding: 1em;
+      border: 1px solid #815c29;
+      background-color: #5cb143;
+      ;
+      font-size: 1.4em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
- .button {
-   padding-left: 90px; 
-   padding-top: 10px;
- }
- 
- button {
-   margin-left: .5em;
-   background-color: #eea051;
-   font-size: 1.4em;
- }
+    input,
+    textarea,
+    select {
+      font: 2em;
+      width: 500px;
+      height: 2em;
+      box-sizing: border-box;
+      border: 1px solid rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+    }
 
- #feedback { 
- display: none;
- font-size: 1.5em;
- background-color: #eea051;
- padding-left: 10px;
- text-align: center;
-}
-</style>
+    input:focus,
+    textarea:focus {
+      border-color: #000;
+    }
+
+    textarea {
+      vertical-align: top;
+      height: 10em;
+    }
+
+    option,
+    input,
+    select,
+    textarea {
+      font-size: 1em;
+    }
+
+    .button {
+      padding-left: 90px;
+      padding-top: 10px;
+    }
+
+    button {
+      margin-left: .5em;
+      background-color: #eea051;
+      font-size: 1.4em;
+    }
+
+    #feedback {
+      display: none;
+      font-size: 1.5em;
+      background-color: #eea051;
+      padding-left: 10px;
+      text-align: center;
+    }
+  </style>
 
 </body>
+
 </html>

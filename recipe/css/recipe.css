@@ -112,6 +112,7 @@ h3 {
     font-size: 2rem;
     color: var(--accent3-color);
     border-style: solid none;
+    padding: none;
 }
 
 h4 {
@@ -135,6 +136,43 @@ ul {
   }
 
 /* Home CSS- grid??????*/
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-right: 10px;
+}
+
+.mission-head {
+    grid-column: 1/5;
+    grid-row: 1;
+}
+
+.mission-para {
+    grid-column: 1/4;
+    grid-row: 2/6;
+}
+
+.demo-head {
+    grid-column: 5/9;
+    grid-row: 1;
+}
+
+.demo-para {
+    grid-column: 5/8;
+    grid-row: 2/6;
+}
+
+.time-head {
+    grid-column: 9/13;
+    grid-row: 1;
+}
+
+.time-para {
+    grid-column: 9/12;
+    grid-row: 2/6;
+}
 
 /* Main Dishes CSS*/
 
