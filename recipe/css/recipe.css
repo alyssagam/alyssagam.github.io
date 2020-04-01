@@ -112,7 +112,7 @@ h3 {
     font-size: 2rem;
     color: var(--accent3-color);
     border-style: solid none;
-    padding: none;
+    padding: 0;
 }
 
 h4 {
